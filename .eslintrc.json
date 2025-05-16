@@ -1,0 +1,9 @@
+{
+   "extends": ["eslint:recommended", "plugin:jest/recommended", "next/core-web-vitals", "prettier"],
+   "env": {
+      "es6": true
+   },
+   "rules": {
+      "no-extra-boolean-cast": "off"
+   }
+}

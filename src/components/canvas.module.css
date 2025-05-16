@@ -1,0 +1,28 @@
+.container {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.canvas {
+   max-height: 100vh;
+   width: 100%;
+   cursor: none;
+}
+
+.previewBox {
+   position: absolute;
+   top: 0;
+   left: 0;
+   border: dashed 1px;
+   pointer-events: none;
+   display: flex;
+   align-items: flex-start;
+}
+
+.previewBoxValue {
+   height: max-content;
+   width: max-content;
+}

@@ -1,0 +1,293 @@
+.toolSideBar {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: var(--nd-bg);
+   width: 100%;
+   height: 100vh;
+   /* overflow: none; */
+   overflow-y: auto;
+}
+
+.upperArea {
+   display: flex;
+   flex-direction: column;
+   overflow-y: none;
+   /* overflow-y: auto; */
+}
+
+.lowerArea {
+   display: flex;
+   flex-direction: column;
+   overflow-y: none;
+   /* overflow-y: auto; */
+}
+
+/* .upperArea::-webkit-scrollbar,
+.lowerArea::-webkit-scrollbar {
+   width: 6px;
+}
+
+.upperArea::-webkit-scrollbar-track,
+.lowerArea::-webkit-scrollbar-track {
+   background: var(--rd-bg);
+}
+
+.upperArea::-webkit-scrollbar-thumb,
+.lowerArea::-webkit-scrollbar-thumb {
+   background: var(--nd-asset-color);
+   border-radius: var(--radius1);
+}
+
+.upperArea::-webkit-scrollbar-thumb:hover,
+.lowerArea::-webkit-scrollbar-thumb:hover {
+   background: var(--rd-asset-color);
+} */
+
+.fieldNameArea ul::-webkit-scrollbar,
+.toolSideBar::-webkit-scrollbar {
+   width: 6px;
+}
+
+.fieldNameArea ul:-webkit-scrollbar-track,
+.toolSideBar::-webkit-scrollbar-track {
+   background: var(--rd-bg);
+}
+
+.fieldNameArea ul::-webkit-scrollbar-thumb,
+.toolSideBar::-webkit-scrollbar-thumb {
+   background: var(--nd-asset-color);
+   border-radius: var(--radius1);
+}
+
+.fieldNameArea ul::-webkit-scrollbar-thumb:hover,
+.toolSideBar::-webkit-scrollbar-thumb:hover {
+   background: var(--rd-asset-color);
+}
+
+.uploadArea {
+   background-color: var(--nd-asset-color);
+   color: var(--nd-txt-color);
+   padding: var(--padding2);
+   margin: var(--margin1);
+   border-radius: var(--radius1);
+   cursor: pointer;
+   border-bottom: var(--border3) var(--darkened-color);
+   transition: var(--transition3);
+   text-align: center;
+}
+
+.uploadArea input {
+   display: none;
+}
+
+.uploadArea:hover {
+   background-color: var(--rd-asset-color);
+}
+
+.savedButton {
+   background-color: var(--nd-asset-color);
+   color: var(--nd-txt-color);
+   padding: var(--padding2);
+   margin: var(--margin1);
+   border-radius: var(--radius1);
+   border: none;
+   border-bottom: var(--border3) var(--darkened-color);
+   transition: var(--transition3);
+   font-size: var(--text-size3);
+   cursor: pointer;
+
+   /*  */
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+}
+
+.savedButton:hover {
+   background-color: var(--rd-asset-color);
+}
+
+.editionArea,
+.viewArea {
+   margin: 0px var(--margin2);
+   display: flex;
+   flex-direction: column;
+   gap: var(--margin1);
+   color: var(--st-txt-color);
+}
+
+.referenceText {
+   cursor: default;
+   font-size: var(--text-size1);
+   color: var(--st-txt-color);
+   border-bottom: var(--border1) var(--nd-asset-color);
+   display: block;
+}
+
+.genericArea {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto var(--margin1);
+   padding-bottom: var(--padding1);
+   border-bottom: var(--border1) var(--nd-asset-color);
+}
+
+.genericArea span {
+   color: var(--st-txt-color);
+}
+
+.genericArea select {
+   background-color: var(--nd-asset-color);
+   border-radius: var(--radius1);
+   padding: var(--padding1);
+   border: none;
+   border-bottom: var(--border3) var(--darkened-color);
+   outline: none;
+   font-size: var(--text-size3);
+   color: var(--nd-txt-color);
+   font-weight: bold;
+   transition: var(--transition3);
+   height: 34px;
+}
+
+.selectFontFamily {
+   width: max-content;
+}
+
+.smallerSelect {
+   width: var(--widthSmallBox);
+}
+
+.genericArea input[type='color'] {
+   width: var(--widthSmallBox);
+   border-radius: var(--radius1);
+   border: none;
+   background-color: var(--nd-asset-color);
+   height: 32px;
+}
+
+.toolsGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(var(--widthSmallBox), auto));
+   text-align: center;
+   gap: var(--margin1);
+   border-bottom: var(--border1) var(--nd-asset-color);
+   margin: auto var(--margin1);
+   padding-bottom: var(--padding1);
+}
+
+.toolsGrid li {
+   list-style: none;
+   padding: var(--padding3);
+   background-color: var(--nd-asset-color);
+   border-radius: var(--radius1);
+   border-bottom: var(--border3) var(--darkened-color);
+   cursor: pointer;
+   transition: var(--transition3);
+   color: var(--nd-txt-color);
+}
+
+.bold {
+   font-weight: bold;
+}
+
+.italic {
+   font-style: italic;
+}
+
+.underline {
+   text-decoration: underline;
+}
+
+.lineThrough {
+   text-decoration: line-through;
+}
+
+.inputArea {
+   margin: auto var(--margin1);
+   padding-bottom: var(--padding1);
+   border-bottom: var(--border1) var(--nd-asset-color);
+}
+
+.inputArea label {
+   display: flex;
+   flex-direction: column;
+   gap: var(--margin1);
+}
+
+.inputArea label textarea {
+   max-width: 100%;
+   min-width: 100%;
+   min-height: 26px;
+   border: none;
+   outline: none;
+   padding: var(--padding1);
+   resize: vertical;
+   border-radius: var(--radius1);
+}
+
+.inputArea label input {
+   max-width: 100%;
+   min-width: 100%;
+   min-height: 26px;
+   border: none;
+   outline: none;
+   padding: var(--padding1);
+   border-radius: var(--radius1);
+}
+
+.questionContainer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.timelineBar {
+   display: flex;
+   justify-content: space-between;
+}
+
+.timelineBar span {
+   padding: var(--padding2);
+   background-color: var(--nd-asset-color);
+   border-radius: var(--radius1);
+   border-bottom: var(--border3) var(--darkened-color);
+   cursor: pointer;
+   transition: var(--transition3);
+   color: var(--nd-txt-color);
+}
+
+.pointsView {
+   display: flex;
+   flex-direction: column-reverse;
+   list-style: none;
+}
+
+.fieldNameArea {
+   display: flex;
+   flex-direction: column;
+   margin: auto var(--margin1);
+   padding-bottom: var(--padding1);
+   border-bottom: var(--border1) var(--nd-asset-color);
+}
+
+.fieldNameArea ul {
+   display: flex;
+   flex-direction: column;
+   gap: var(--margin1);
+   margin-top: var(--margin1);
+   color: var(--nd-txt-color);
+   min-height: 100px;
+   max-height: 200px;
+   overflow-y: auto;
+}
+
+.fieldNameArea ul li {
+   padding: var(--margin1);
+   background-color: var(--nd-asset-color);
+   border-radius: var(--radius1);
+   word-break: keep-all;
+   margin-right: var(--margin1);
+}

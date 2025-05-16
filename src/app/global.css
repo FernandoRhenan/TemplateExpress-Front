@@ -1,0 +1,71 @@
+/* Here just definitely global styles */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: var(--st-bg);
+   font-size: var(--text-size3);
+   color: var(--st-txt-color);
+}
+
+html {
+   overflow: hidden;
+}
+
+:root {
+   --st-bg: #eee;
+   --nd-bg: #2fb638;
+   --rd-bg: #30a938;
+
+   --st-txt-color: #222;
+   --nd-txt-color: #eee;
+
+   /* --st-asset-color: #30a43a;
+   --nd-asset-color: #208328;
+   --rd-asset-color: #227729; */
+
+   --st-asset-color: #30a43a;
+   --nd-asset-color: #14961f;
+   --rd-asset-color: #007f08;
+
+   --darkened-color: rgba(0, 0, 0, 0.25);
+
+   --shadow: 0 0 8px #666;
+
+   --border1: solid 1px;
+   --border2: solid 2px;
+   --border3: solid 4px;
+
+   --radius1: 3px;
+   --radius2: 5px;
+   --radius3: 10px;
+   --radius4: 25px;
+   --radius5: 50px;
+
+   --padding1: 5px;
+   --padding2: 8px;
+   --padding3: 10px;
+
+   --margin1: 5px;
+   --margin2: 10px;
+   --margin3: 15px;
+   --margin4: 25px;
+   --margin5: 40px;
+   --margin6: 70px;
+   --margin7: 100px;
+
+   --text-size1: 13px;
+   --text-size2: 14px;
+   --text-size3: 15px;
+   --text-size4: 16px;
+
+   --transition1: 150ms;
+   --transition2: 350ms;
+   --transition3: 500ms;
+
+   --widthSmallBox: 50px;
+}

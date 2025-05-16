@@ -1,0 +1,5 @@
+.newUpload {
+   display: grid;
+   /* Makes the <ToolSideBar/> at least min(x) wide and the <Canvas/> self-adjusting  */
+   grid-template-columns: min(250px) auto;
+}
